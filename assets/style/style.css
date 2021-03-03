@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.clear {
+  clear: both;
+}
+.card {
+  display: block;
+  text-align: left;
+}
+.column1 {
+  background: rgb(255, 186, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 186, 153, 1) 0%,
+    rgba(254, 147, 152, 1) 35%,
+    rgba(254, 146, 170, 1) 100%
+  );
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 16px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+.column2 {
+  background: rgb(130, 196, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(130, 196, 246, 1) 0%,
+    rgba(50, 156, 230, 1) 35%,
+    rgba(51, 153, 227, 1) 100%
+  );
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 16px;
+  border-radius: 10px;
+  color: white;
+}
+.column3 {
+  background: rgb(124, 217, 209);
+  background: linear-gradient(
+    90deg,
+    rgba(124, 217, 209, 1) 0%,
+    rgba(42, 211, 192, 1) 35%,
+    rgba(52, 216, 192, 1) 100%
+  );
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 16px;
+  border-radius: 10px;
+  color: white;
+}
+p{
+  padding: 25px 20px 10px;
+}
+.p-number{
+  font-size: 30px;
+}
+
+.p-teg1::before {
+  content: url(../images/chart-bell-curve-cumulative.svg);
+  float: right;
+
+}
+.p-teg2::before {
+  content: url(../images/bookmark-outline.svg);
+  float: right;
+}
+.p-teg3::before {
+  content: url(../images/diamond-outline.svg);
+  float: right;
+  
+
+}
+:nth-child(){
+  opacity: 0.5;
+}
+.column1::after{
+  position: absolute;
+  border-radius: 50%;
+  color: aqua;
+}
